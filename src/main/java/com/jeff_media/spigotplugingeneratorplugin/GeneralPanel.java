@@ -3,7 +3,7 @@ package com.jeff_media.spigotplugingeneratorplugin;
 import javax.swing.*;
 import java.awt.*;
 
-public class SpigotMavenPluginBuilderPanel extends JPanel {
+public class GeneralPanel extends JPanel {
 
     private final JTextField pluginName = new JTextField("MyPlugin");
     private final JTextField author = new JTextField("MyUsername");
@@ -22,7 +22,7 @@ public class SpigotMavenPluginBuilderPanel extends JPanel {
     private final JCheckBox addStaticGetter = new JCheckBox("Add static getter for main istance", true);
     private final JCheckBox useKotlin = new JCheckBox("Use Kotlin instead of Java", false);
 
-    public SpigotMavenPluginBuilderPanel() {
+    public GeneralPanel() {
         setLayout(new GridBagLayout());
 
         add(new JLabel("Plugin name"), Constraints.get(0, 0, 0.5, 0, 1));

@@ -1,6 +1,7 @@
 plugins {
     id("java")
     id("org.jetbrains.intellij") version "1.8.0"
+    id("io.freefair.lombok") version "6.6.2"
 }
 
 group = "com.jeff_media"
@@ -8,6 +9,19 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+dependencies {
+    implementation("org.yaml:snakeyaml:1.33")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter:5.7.1")
+
+}
+
+tasks.test {
+    useJUnitPlatform()
+
+    maxHeapSize = "1G"
+
 }
 
 // Configure Gradle IntelliJ Plugin
@@ -41,3 +55,4 @@ tasks {
         token.set(System.getenv("PUBLISH_TOKEN"))
     }
 }
+

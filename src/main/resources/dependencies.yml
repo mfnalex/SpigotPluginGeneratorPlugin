@@ -1,0 +1,5 @@
+JeffLib:
+  groupId: com.jeff-media
+  artifactId: JeffLib
+  version: 12.0.0
+  repositoryId: jeff-media-public

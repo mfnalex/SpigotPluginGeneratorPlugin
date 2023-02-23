@@ -1,0 +1,15 @@
+<dependencies>
+    <dependency>
+        <id>jefflib</id>
+        <name>JeffLib</name>
+        <version>12.0.0</version>
+        <repositoryId>jeff-media-public</repositoryId>
+        <scope>compile</scope>
+        <relocations>
+            <relocation>
+                <pattern>com.jeff_media.jefflib</pattern>
+                <shadedPattern>${package}.jefflib</shadedPattern>
+            </relocation>
+        </relocations>
+    </dependency>
+</dependencies>
